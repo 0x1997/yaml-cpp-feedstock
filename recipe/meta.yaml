@@ -1,0 +1,19 @@
+package:
+  name: yaml-cpp
+  version: 20170510
+
+source:
+  git_url: https://github.com/jbeder/yaml-cpp.git
+  git_rev: beb44b872c07c74556314e730c6f20a00b32e8e5
+
+build:
+  # If the installation is complex, or different between Unix and Windows, use
+  # separate bld.bat and build.sh files instead of this key.  Add the line
+  # "skip: True  # [py<35]" (for example) to limit to Python 3.5 and newer, or
+  # "skip: True  # [not win]" to limit to Windows.
+
+requirements:
+  build:
+    - toolchain
+    - cmake
+    - ninja
