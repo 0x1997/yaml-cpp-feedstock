@@ -1,10 +1,10 @@
 package:
   name: yaml-cpp
-  version: 20170510
+  version: 0.6.2
 
 source:
   git_url: https://github.com/jbeder/yaml-cpp.git
-  git_rev: beb44b872c07c74556314e730c6f20a00b32e8e5
+  git_rev: yaml-cpp-0.6.2
 
 build:
   # If the installation is complex, or different between Unix and Windows, use
@@ -14,6 +14,7 @@ build:
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('cxx') }}
+    - toolchain3
     - cmake
     - ninja
